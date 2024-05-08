@@ -1,0 +1,25 @@
+.footer {
+    position: relative;
+    top: 95px;
+    background-color: #2e3e4f;
+    color: white;
+	padding: 40px 0;
+}
+
+.footer a {
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.contact-us, .attention-us, .more-links {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+}

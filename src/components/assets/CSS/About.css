@@ -1,0 +1,44 @@
+.header-slider {
+    position: relative;
+    width: 100%;
+}
+  
+.header-slider img {
+    width: 100%;
+    height: auto; 
+    display: block; /* 去除图片下方的空隙 */
+}
+  
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(240, 248, 255, 0.8);
+}
+
+.caption h1 {
+    font-size: 2vw; /* 标题字体大小随视窗宽度变化 */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* 为标题添加阴影效果以提高可读性 */
+}
+
+.caption p {
+    font-size: 1vw; 
+    margin: 1vw 0; 
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6); 
+}
+
+@media (max-width: 768px) {
+    .caption h1 {
+        font-size: 18px; 
+    }
+
+    .caption p {
+        font-size: 12px; 
+    }
+}

@@ -1,6 +1,5 @@
 .footer {
     position: relative;
-    top: 95px;
     background-color: #2e3e4f;
     color: white;
 	padding: 40px 0;
@@ -8,6 +7,7 @@
 
 .footer a {
     color: white;
+    text-decoration: none;
 }
 
 .container {

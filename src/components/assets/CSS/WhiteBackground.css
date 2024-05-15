@@ -1,0 +1,84 @@
+#white-background {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 45vw;
+}
+
+#all-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	left:10%;
+	top:10%;
+    right: 10%;
+    position: absolute;
+}
+
+#title-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-title {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.item {
+    box-sizing: border-box;
+}
+  
+.item-first {
+    position: relative;
+    display: flex;
+    width: vw;
+}
+  
+.other-items {
+    position: relative;
+    display: flex;
+}
+  
+.item-first img {
+    width: 35vw;
+    height: 24vw;/*是否不等宽*/
+}
+
+.other-items img {
+    width: 18vw;
+    height: 24vw;
+}
+  
+.white-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	left:10%;
+	top:10%;
+    right: 10%;
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+}
+
+.introduce-white {
+    position: absolute;
+    color: white;
+	left:10%;
+	top:10%;
+    right: 10%;
+}
+
+.introduce-white h2 {
+    font-size: 2vw;
+}
+
+.introduce-white p {
+    font-size: 1vw;
+}

@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet";
-import Navigation from './Navigation';
-import './assets/CSS/Page_global.css';
-import Footer from "./Footer";
+import Navigation from './components/Navigation';
+import './components/assets/CSS/Page_global.css';
+import Footer from "./components/Footer";
 
 function BusinessSystem() {
+  /* 页面参考 https://www.nasa.gov/nasa-missions/ */
   return (
     <div>
       <Helmet>

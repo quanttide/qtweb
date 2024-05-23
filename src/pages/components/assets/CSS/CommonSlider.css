@@ -1,0 +1,28 @@
+.common-dots {
+    display: flex !important;
+    justify-content: right;
+    position: absolute;
+    right: 0;
+}
+
+.common-dots li {
+    list-style: none;
+    margin: 0 1vw;
+}
+
+.common-dots li button {
+    border: 0.1vw solid #a7a7a7; 
+    background-color: transparent;
+    width: 1vw; /* 方形大小 */
+    height: 1vw;
+    border-radius: 0; /* 移除圆角，使其为方形 */
+    padding: 0;
+    cursor: pointer;
+    text-indent: -9999px; /* 隐藏按钮内的数字 */
+    overflow: hidden; /* 确保内容不会显示出来 */
+}
+
+.common-dots li.slick-active button {
+    background-color: #0073e6; /* 选中状态的背景颜色 */
+}
+

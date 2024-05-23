@@ -54,11 +54,9 @@ export default function Navigation() {
         <ul className='list'>
           <li><Link to="/">公司简介</Link></li>
           <li><Link to="/business">业务体系</Link></li>
-          <li><Link to="/development">成长历程</Link></li>
-          <li><Link to="/culture">企业文化</Link></li>
-          <li><Link to="/news">公司新闻</Link></li>
+          <li><Link to="/news">公司博客</Link></li>
+          <li><Link to="/aboutus">关于我们</Link></li>
           <li><Link to="/joinus">加入我们</Link></li>
-          <li><Link to="/team">管理团队</Link></li>
         </ul>
       )}
       {menuOpen && windowWidth <= 768 && (
@@ -67,13 +65,11 @@ export default function Navigation() {
               关闭菜单
             </button>
             <ul className='menu-list'>
-             <li><Link to="/">公司简介</Link></li>
+              <li><Link to="/">公司简介</Link></li>
               <li><Link to="/business">业务体系</Link></li>
-              <li><Link to="/development">成长历程</Link></li>
-              <li><Link to="/culture">企业文化</Link></li>
-              <li><Link to="/news">公司新闻</Link></li>
+              <li><Link to="/news">公司博客</Link></li>
+              <li><Link to="/aboutus">关于我们</Link></li>
               <li><Link to="/joinus">加入我们</Link></li>
-              <li><Link to="/team">管理团队</Link></li>
             </ul>
           </div>
       )}

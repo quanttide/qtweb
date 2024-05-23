@@ -1,0 +1,21 @@
+
+.row-container {
+    display: flex;  /* 这将使子元素横向排列 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: space-between; /* 水平居中对齐 */
+}
+
+.content p {
+    width: 90%; 
+    text-align: justify;
+}
+
+.text-image-block img {
+    height: 28vw;
+    width: 22vw;
+    object-fit: cover; /*裁切图片*/
+}
+
+.sub-title {
+    font-size: 3vw;
+}

@@ -1,7 +1,8 @@
 import './assets/CSS/WhiteBackground.css';
 
 interface Props {
-  mainTitle:string;
+  pattern: 'monospaced' | 'highlight_header';
+  mainTitle: string;
   link: string;
   data: {
     imageUrl: string;
@@ -9,9 +10,10 @@ interface Props {
     subtitles: string[];
   }[];
 }
-export default function WhiteBackground({mainTitle,link,data}:Props) {
+
+export default function WhiteBackground({pattern,mainTitle,link,data}:Props) {
   return (
-    <div id='white-background'>
+    <div className='outer-container'>
       <div id = 'all-items'>
         <div id='title-line'>
           <h1 className='main-title' >{mainTitle}</h1> 
@@ -21,7 +23,7 @@ export default function WhiteBackground({mainTitle,link,data}:Props) {
         </div>
         <div className="items">
           {data.map((item, index) => {
-            const itemClass = index  === 0 ? 'item item-first' : 'item other-items';
+            const itemClass = (index === 0 && pattern === 'highlight_header') ? 'item item-first' : 'item other-items';
 
             return (
               <div key={index} className={itemClass}>

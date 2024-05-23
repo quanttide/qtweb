@@ -1,9 +1,10 @@
-import Navigation from './Navigation';
+import Navigation from './components/Navigation';
 import { Helmet } from "react-helmet";
-import './assets/CSS/Page_global.css';
-import Footer from "./Footer";
+import './components/assets/CSS/Page_global.css';
+import Footer from "./components/Footer";
 
 function News() {
+  /* 参考 https://careers.tencent.com/ */
   return (
     <div>
       <Helmet>

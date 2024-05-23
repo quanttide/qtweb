@@ -1,17 +1,8 @@
-#white-background {
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    height: 45vw;
-}
 
 #all-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
-	left:10%;
-	top:10%;
-    right: 10%;
-    position: absolute;
 }
 
 #title-line {
@@ -37,7 +28,6 @@
 .item-first {
     position: relative;
     display: flex;
-    width: vw;
 }
   
 .other-items {
@@ -46,12 +36,12 @@
 }
   
 .item-first img {
-    width: 35vw;
+    width: 30vw;
     height: 24vw;/*是否不等宽*/
 }
 
 .other-items img {
-    width: 18vw;
+    width: 16vw;
     height: 24vw;
 }
   

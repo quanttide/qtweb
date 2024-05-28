@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+}
+
+.sidebar {
+    position: relative;
+    width: 300px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 50px;
+    width: 150px;
+}
+
+.sidebar li {
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+    color: rgba(0, 0, 0, 0.504);
+}
+
+.sidebar li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.sidebar li:hover::before,
+.sidebar li:hover {
+    background-color: rgba(0, 0, 0, 0.114); 
+    color: black; 
+}
+
+.sidebar li.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: rgb(88, 88, 241);
+}
+
+.sidebar li.active {
+    color: rgb(0, 0, 0);
+}
+
+.content {
+    margin-left: 40px;
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.content-section-list {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar.fixed {
+    position: fixed;
+    z-index: 1000; /* 确保固定的侧边栏在其他内容之上 */
+    width: 300px;
+    top: 5.3vw;
+}
+
+.siderbar-placeholders {
+    position: relative;
+    width: 300px;
+}

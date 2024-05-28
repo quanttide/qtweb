@@ -41,7 +41,6 @@ export default function HeaderSelect({ mainTitle, contents }: Props) {
                     </button>
                 ))}
             </div>
-            <hr className="divider" />
             <div className="content-display">
                 {selectedContent !== null ? (
                     <div>{contents[selectedContent].content}</div>

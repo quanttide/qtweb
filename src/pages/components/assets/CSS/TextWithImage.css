@@ -1,14 +1,39 @@
-
 .row-container {
     display: flex;  /* 这将使子元素横向排列 */
     align-items: center; /* 垂直居中对齐 */
     justify-content: space-between; /* 水平居中对齐 */
 }
 
-.content p {
-    width: 90%; 
+.row-container.image-left .text-image-block {
+    order: 1; /* 图片在左 */
+}
+
+.row-container.image-left .content {
+    order: 2; /* 文字在右 */
+}
+
+.row-container.image-right .text-image-block {
+    order: 2; /* 图片在右 */
+}
+
+.row-container.image-right .content {
+    order: 1; /* 文字在左 */
+}
+
+.row-container.row-container.content p {
     text-align: justify;
 }
+
+.row-container.row-container.image-left .content  {
+    text-align: justify;
+    padding-left: 18%;
+}
+
+.row-container.image-right .content  {
+    text-align: justify;
+    padding-right: 18%;
+}
+
 
 .text-image-block img {
     height: 28vw;
@@ -19,3 +44,11 @@
 .sub-title {
     font-size: 3vw;
 }
+
+
+
+.text-with-image-container.with-bottom {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5%;
+}
+

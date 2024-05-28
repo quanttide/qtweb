@@ -31,6 +31,10 @@ const introducestext = ['“量”寓意“定量”', '“潮”寓意时代的
 
 const introduceCEO = "张果先生是厦门大学王亚南经济研究院14级经济学国际化试点班本科生，威斯康辛大学麦迪逊分校18级经济学硕士（U.S. News专排第12名）。";
 
+const introduces = [
+  "",
+]
+
 export default function About() {
 
 
@@ -42,11 +46,11 @@ export default function About() {
 
       <HeaderSlider title="量潮科技" imageUrl="./assets/images/about_background.jpg" introduces={introducestext}/>
 
-      <WhiteBackground pattern='highlight_header' mainTitle='业务' link='\business' data={data} />
+      <WhiteBackground pattern='highlight_header' dataTextUnderImage={true} mainTitle='业务' link='\business' data={data} introduces={introduces}/>
 
       <FullPictureBackground link='\business' data={data} singlePicture = {false}/>
 
-      <TextWithImage maintitle="创始人" subtitle="张果" introduce={introduceCEO} image_url="./assets/images/iguo.png" link="https://zhangguo.me/"/>
+      <TextWithImage maintitle="创始人" subtitle="张果" introduce={introduceCEO} image_url="./assets/images/iguo.png" link="https://zhangguo.me/" imagePosition="right" bottomBar={false}/>
 
       <Footer />
     </div>

@@ -1,0 +1,74 @@
+
+.content-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+  
+.content-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.section {
+    display: flex;
+    align-items: flex-start; /* 确保图片和内容顶部对齐 */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+  
+.section:last-child {
+    border-bottom: none;
+}
+  
+.section-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 10%;
+    object-fit: cover; /* 裁切图片 */
+    position: relative;
+}
+  
+.section-content {
+    flex: 1;
+}
+  
+.section-content h2 {
+    margin: 0 0 10px;
+}
+  
+.section-content p {
+    margin: 0 0 10px;
+}
+  
+.section-link {
+    width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 255, 0);
+    color: rgb(0, 21, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px; /* 确保按钮与内容有一定间距 */
+    align-self: flex-start; /* 确保按钮在顶部对齐 */
+}
+  
+.section-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+  
+.section-detail {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+  

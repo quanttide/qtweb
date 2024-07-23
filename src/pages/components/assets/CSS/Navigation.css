@@ -1,5 +1,5 @@
 nav {
-    z-index: 1000;/*最上层组件*/
+    z-index: 1000; /* 最上层组件 */
     display: flex;
     justify-content: space-around;
     position: sticky;
@@ -8,7 +8,7 @@ nav {
     background-color: rgb(255, 255, 255);
 }
   
-.list { /*电脑端导航栏横向*/
+.list { /* 电脑端导航栏横向 */
     list-style: none;
     display: flex;
 }
@@ -17,13 +17,24 @@ li a {
     color: #251d1d;
     text-decoration: none;
     padding: 10px;
+    position: relative;
 }
 
-li a:hover {
-    background-color: rgba(224, 224, 224, 0.444);
+li a:hover{
+    background-color: rgba(224, 224, 224, 0.618);
     box-shadow: 0px 4px 8px 0px rgba(222, 222, 222, 0.2);
     border-radius: 5px;
     transition: all 0.3s ease;
+}
+
+li a.active::after {
+    background-color:  rgba(15, 98, 254);
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
 }
 
 .icon {
@@ -48,15 +59,12 @@ li a:hover {
     height: 100%;
     background-color: #ffffff; 
     box-shadow: 2px 0 5px rgba(0,0,0,0.2); 
-    transform: translateX(-260px,0); /* 初始状态，菜单位于屏幕左侧之外 */
-    /*过度动画无效！！*/
-    transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+    transform: translateX(-260px); /* 初始状态，菜单位于屏幕左侧之外 */
+    transition: transform 0.25s ease-out;
 }
 
 .menu-items.open {
-    display: block;
-    transform: translateX(0,0); /* 当菜单打开时，将菜单滑入屏幕 */
-    transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+    transform: translateX(0); /* 当菜单打开时，将菜单滑入屏幕 */
 }
 
 .menu-list li {

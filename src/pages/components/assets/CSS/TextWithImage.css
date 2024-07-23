@@ -26,29 +26,25 @@
 
 .row-container.row-container.image-left .content  {
     text-align: justify;
-    padding-left: 18%;
+    padding-left: 345.6px; /* 18% of 1920px */
 }
 
 .row-container.image-right .content  {
     text-align: justify;
-    padding-right: 18%;
+    padding-right: 345.6px; /* 18% of 1920px */
 }
 
-
 .text-image-block img {
-    height: 28vw;
-    width: 22vw;
+    height: 537.6px; /* 28% of 1920px */
+    width: 422.4px; /* 22% of 1920px */
     object-fit: cover; /*裁切图片*/
 }
 
 .sub-title {
-    font-size: 3vw;
+    font-size: 57.6px; /* 3% of 1920px */
 }
-
-
 
 .text-with-image-container.with-bottom {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 5%;
+    padding-bottom: 5%; /* 没有改变，因为百分比是基于容器的高度或宽度 */
 }
-

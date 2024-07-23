@@ -2,13 +2,27 @@
     position: relative;
     width: 100%;
 }
-  
+
 .header-slider img {
     width: 100%;
-    height: auto; 
+    object-fit: cover; /* 裁切图片 */
     display: block; /* 去除图片下方的空隙 */
+    margin: 0; /* 确保没有默认外边距 */
+    padding: 0; /* 确保没有默认内边距 */
 }
-  
+
+.header-slider.full img {
+    height: 75vh; /* 全屏高度 */
+}
+
+.header-slider.half img {
+    height: 50vh; /* 半屏高度 */
+}
+
+.header-slider.quarter img {
+    height: 25vh; /* 四分之一屏高度 */
+}
+
 .caption {
     position: absolute;
     top: 0;
@@ -23,14 +37,14 @@
 }
 
 .caption h1 {
-    font-size: 2.5vw; /* 标题字体大小随视窗宽度变化 */
+    font-size: 40px; /* 标题字体大小随视窗宽度变化 */
     font-weight: 200;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* 为标题添加阴影效果以提高可读性 */
 }
 
 .caption p {
-    font-size: 1vw; 
-    margin: 1vw 0;
+    font-size: 25px; 
+    margin: 20px 0;
     font-weight: 100; 
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6); 
 }
@@ -44,4 +58,3 @@
         font-size: 12px; 
     }
 }
-

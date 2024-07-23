@@ -23,6 +23,6 @@
 }
 
 .common-dots li.slick-active button {
-    background-color: #0073e6; /* 选中状态的背景颜色 */
+    background-color:  rgba(15, 98, 254);; /* 选中状态的背景颜色 */
 }
 

@@ -31,18 +31,19 @@
   
 .other-items {
     position: relative;
-    margin-left: 3.5vw;
+    margin-left: 68px;
+    margin-right: 0px;
 }
   
 .item-first img {
-    width: 30vw;
-    height: 24vw;/*是否不等宽*/
+    width: 576px;
+    height: 460.8px;/*是否不等宽*/
     object-fit: cover; /*裁切图片*/
 }
 
 .other-items img {
-    width: 16vw;
-    height: 24vw;
+    width: 320px;
+    height: 460px;
     object-fit: cover; /*裁切图片*/
 }
   
@@ -54,7 +55,7 @@
 	top:10%;
     right: 10%;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 25px;
     color: black;
 }
 
@@ -68,19 +69,19 @@
 
 .introduce-white-under {
     color: black;
-    margin-right: 15%;
+    margin-right: 0%;
 }
 
 .introduce-white h2 ,.introduce-white-under h2{
-    font-size: 1.4vw;
+    font-size: 35px;
 }
 
 .introduce-white p ,.introduce-white-under p{
-    font-size: 0.8vw;
+    font-size: 25px;
 }
 
 .whitebackground-introduce {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 200;
     display: flex;
     justify-content: center;

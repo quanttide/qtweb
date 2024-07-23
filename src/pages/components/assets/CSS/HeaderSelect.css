@@ -21,7 +21,7 @@
 
 .button.selected {
   color: #000000;
-  border-bottom: 3px solid #007bff;
+  border-bottom: 3px solid  rgba(15, 98, 254);
 }
 
 .content-display {

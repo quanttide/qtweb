@@ -15,5 +15,22 @@ h1, h2 ,h3 ,h4 ,h5 {
 }
 
 p {
-    font-weight: 300;
+    font-weight: 200;
+    padding: 2px;
+    font-size: 25px;
 }
+
+.text-link {
+    font-weight: 200;
+    padding: 2px;
+    font-size: 20px;
+    color: rgba(15, 98, 254);
+}
+
+body {
+    width: 1920px; /* 固定宽度 */
+    height: 1080px; /* 固定高度 */
+    overflow: auto; /* 允许滚动 */
+    margin: 0 auto; /* 居中显示 */
+  }
+  

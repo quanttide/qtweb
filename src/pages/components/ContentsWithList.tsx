@@ -9,11 +9,21 @@ interface Props {
         imageUrl: string;
     }[];
 }
-
+/**
+ * 一个左侧带有目录侧边栏的分章节阅读器，不支持详细等
+ * 
+ * @param list - 侧边栏展示的目录，和章节顺序一一对应
+ * @param sections - 具体章节内容，一个数组
+ * @param section.title - 章节标题
+ * @param section.paragraph - 章节的具体内容，一个数组，数组中的每个元素为字符串没对应一个段落p，通过格式 ![描述](link) 插入网页链接
+ * @param section.imageUrl - 这一章节有无插图，空为留空
+ */
 export default function ContentsWithList({ list, sections }: Props) {
+    //
     const sectionRefs = useMemo(() => sections.map(() => React.createRef<HTMLDivElement>()), [sections]);
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const [delayedActiveIndex, setDelayedActiveIndex] = useState<number>(0);
+
     const [needFixed, setNeedFixed] = useState(false);
     const fixedTopRef = useRef(0);
 
@@ -36,7 +46,7 @@ export default function ContentsWithList({ list, sections }: Props) {
     useEffect(() => {
         const handleScroll = () => {
             fixedTopRef.current = (document.getElementById('fixed-menu') as HTMLElement).offsetTop;
-            console.log(fixedTopRef.current);  // 移动 console.log 到 useEffect 中
+            console.log(fixedTopRef.current);  
             const scrollTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
             if (scrollTop >= fixedTopRef.current) {
                 setNeedFixed(true);
@@ -73,8 +83,8 @@ export default function ContentsWithList({ list, sections }: Props) {
                 <div className={`sidebar ${needFixed ? 'fixed' : ''}`} >
                     <ul>
                         {list.map((item, index) => (
-                            <li 
-                                key={index} 
+                            <li
+                                key={index}
                                 onClick={() => handleScrollToSection(index)}
                                 className={delayedActiveIndex === index ? 'active' : ''}
                             >
@@ -87,9 +97,18 @@ export default function ContentsWithList({ list, sections }: Props) {
                     {sections.map((section, index) => (
                         <div key={index} className='content-section-list' ref={sectionRefs[index]}>
                             <h2>{section.title}</h2>
-                            {section.paragraph.map((text, idx) => (
-                                <p key={idx}>{text}</p>
-                            ))}
+                            {section.paragraph.map((text, idx) => {
+                                // 检测特定格式的字符串
+                                const linkPattern = /!\[(.*?)\]\((.*?)\)/;
+                                const match = text.match(linkPattern);
+
+                                if (match) {
+                                    const [, altText, url] = match;
+                                    return <a className='text-link' target='blank' key={idx} href={url}>{altText}</a>;
+                                }
+
+                                return <p key={idx}>{text}</p>;
+                            })}
                             {section.imageUrl && <img src={section.imageUrl} alt={section.title} />}
                         </div>
                     ))}

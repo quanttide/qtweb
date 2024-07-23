@@ -27,23 +27,22 @@
   
 .item-first {
     position: relative;
+    margin-right: 75px;
 }
   
 .other-items {
     position: relative;
-    margin-left: 68px;
-    margin-right: 0px;
 }
   
 .item-first img {
-    width: 576px;
-    height: 460.8px;/*是否不等宽*/
+    width: 570px;
+    height: 360px;/*是否不等宽*/
     object-fit: cover; /*裁切图片*/
 }
 
 .other-items img {
-    width: 320px;
-    height: 460px;
+    width: 288px;
+    height: 360px;
     object-fit: cover; /*裁切图片*/
 }
   

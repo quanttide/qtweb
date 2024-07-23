@@ -8,11 +8,15 @@ interface Props {
         content: React.ReactNode;
     }[];
 }
-
+/**
+ * 一个横向的内容选择器
+ * @param mainTitle - 标题，空时不显示
+ * @param contents - 被选择的页面，列表
+ * @param contents.subtitle - 这个被选择页面的标题
+ * @param contents.content - 被选择的页面显示的内容，一个组件
+ */
 export default function HeaderSelect({ mainTitle, contents }: Props) {
-    /* 
-    置于上方的内容选择器
-    */
+
     const [selectedContent, setSelectedContent] = useState<number | null>(null);
 
     useEffect(() => {

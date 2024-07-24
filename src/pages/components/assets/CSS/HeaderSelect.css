@@ -1,7 +1,6 @@
-
 .buttons {
   display: flex;
-  justify-content:left;
+  justify-content: left;
   padding-left: 20%;
   margin: 20px;
 }
@@ -21,7 +20,7 @@
 
 .button.selected {
   color: #000000;
-  border-bottom: 3px solid  rgba(15, 98, 254);
+  border-bottom: 3px solid rgba(15, 98, 254);
 }
 
 .content-display {

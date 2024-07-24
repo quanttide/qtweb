@@ -8,6 +8,7 @@ import WhiteBackground from './components/WhiteBackground';
 import Navigation from './components/Navigation';
 import TextWithImage from "./components/TextWithImage";
 import HeaderSlider from "./components/HeaderImage";
+import ScreenDimensions from "./components/ScreenDimensions";
 
 // 数据区
 const data = [
@@ -62,10 +63,12 @@ const introduces = [
 // 代码区
 export default function About() {
 
+  
+  
   return (
     <div>
       <Helmet><title>QuantTide 量潮科技</title></Helmet>
-
+      <ScreenDimensions />
       <Navigation />
 
       <HeaderSlider title="量潮科技" imageUrl="./assets/images/pexels-zch-2791918-20376383.jpg" imageHeight="full" introduces={introducestext} />

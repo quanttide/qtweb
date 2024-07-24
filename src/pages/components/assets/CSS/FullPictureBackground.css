@@ -8,11 +8,11 @@
     position: relative;
     width: 100%;
 }
-  
+
 .parent-div img {
     width: 100%;
     object-fit: cover;
-    height: 60vh;
+    height: 70vh;
 }
 
 .introduce {
@@ -21,8 +21,8 @@
     justify-content: center;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
-	left:15%;
-	top:10%;
+    left: 15%;
+    top: 10%;
     right: 15%;
     position: absolute;
 }
@@ -34,127 +34,135 @@
     border: 0;
     right: 5%;
     bottom: 5%;
-    background: none; /* 移除默认按钮背景 */
-    padding: 0; /* 移除默认按钮内边距 */
-    height: 192px;
-    width: 384px;
+    background: none;
+    /* 移除默认按钮背景 */
+    padding: 0;
+    /* 移除默认按钮内边距 */
+    height: 20vw;
+    width: 38vw;
     outline: none;
 }
 
 .next-button-h1 {
-    color:  rgba(15, 98, 254);
-    font-size: 100px; /* 调整箭头大小 */
-}
-
-.parent-div h1 {
-    font-size: 45px; 
+    color: rgba(15, 98, 254);
+    display: flex;
+    padding-right: 27%;
+    justify-content: right;
+    padding-top: 20%;
+    /* 调整箭头大小 */
 }
 
 .parent-div p {
-    font-size: 25px; 
-    margin: 20px 0; 
+    margin: 1vw 0;
 }
-
 
 .more {
     font-size: 25px;
     position: absolute;
     right: 0%;
-    top:0%;
+    top: 0%;
     color: white;
     text-decoration: none;
 }
 
-
-@media (max-width: 768px) {
-    .parent-div h1 {
-        font-size: 30px; /* 标题字体大小随视窗宽度变化 */
-    }
-
-    .parent-div p {
-        font-size: 15px; 
-        margin: 1vw 0; 
-    }
-}
-
-
-
 .more:hover {
     color: gray;
 }
+
 /*轮播图下方dot样式*/
-.slick-dots1
-{
- position: absolute;
- display: block;
- width: 100%;
- padding: 0;
- margin: 0;
- list-style: none;
- left: 10%; /*dot整体位置*/
- bottom: 5%;
+.slick-dots1 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    left: 10%;
+    /*dot整体位置*/
+    bottom: 5%;
 }
 
-.slick-dots1 li
-{
- position: relative;
- display: inline-block;
- width: 25px;
- height: 25px;
- margin: 0 70px;/*标签间间距*/
- padding: 0;
- cursor: pointer;
+.slick-dots1 li {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 70px;
+    /*标签间间距*/
+    padding: 0;
+    cursor: pointer;
 }
 
-.slick-dots1 li button
-{
- font-size: 0;
- line-height: 0;
- display: block;
- width: 25px;
- height: 15px;
- padding: 5px;
- cursor: pointer;
- color: transparent;
- border: 0;
- outline: none;
- background: transparent;
+.slick-dots1 li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 25px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
 }
 
 .slick-dots1 li button:hover,
-.slick-dots1 li button:focus
-{
- outline: none;
+.slick-dots1 li button:focus {
+    outline: none;
 }
 
 .slick-dots1 li button:hover:before,
-.slick-dots1 li button:focus:before
-{
- opacity: 1;
+.slick-dots1 li button:focus:before {
+    opacity: 1;
 }
 
 /*未选中时的样式*/
-.slick-dots1 li button:before
-{
- font-family: 'slick';
- font-size: 8px;
- line-height: 8px;
- position: absolute;
- width: 60px;/*标签长度*/
- height: 2px;
- content: '';
- text-align: center;
- opacity: .25;
- background-color: rgb(255, 255, 255);
- -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
+.slick-dots1 li button:before {
+    font-family: 'slick';
+    font-size: 8px;
+    line-height: 8px;
+    position: absolute;
+    width: 60px;
+    /*标签长度*/
+    height: 2px;
+    content: '';
+    text-align: center;
+    opacity: .25;
+    background-color: rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /*选中的样式*/
 
-.slick-dots1 li.slick-active button:before
-{
- opacity: .75;
- color:  rgba(15, 98, 254);
- background-color:  rgba(15, 98, 254);
+.slick-dots1 li.slick-active button:before {
+    opacity: .75;
+    color: rgba(15, 98, 254);
+    background-color: rgba(15, 98, 254);
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* 翻页按钮 */
+    .next-button {
+        height: 256px;
+        width: 384px;
+    }
+
+    .next-button-h1 {
+        color: rgba(15, 98, 254);
+        font-size: 100px;
+        /* 调整箭头大小 */
+    }
+
+    .parent-div h1 {
+        font-size: 45px;
+    }
+
+    .parent-div p {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
 }

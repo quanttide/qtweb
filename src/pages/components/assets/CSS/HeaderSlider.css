@@ -37,14 +37,10 @@
 }
 
 .caption h1 {
-    font-size: 55px; /* 标题字体大小随视窗宽度变化 */
-    font-weight: 100;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* 为标题添加阴影效果以提高可读性 */
 }
 
 .caption p {
-    font-size: 30px; 
     margin: 20px 0;
-    font-weight: 100; 
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6); 
 }

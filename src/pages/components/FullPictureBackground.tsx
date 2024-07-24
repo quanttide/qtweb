@@ -64,7 +64,7 @@ export default function FullPictureBackground({ link, data, singlePicture }: Pro
                     {data.map(({ imageUrl, title, subtitles }, index) => (
                         <div key={index} className='parent-div'>
                             <div className="introduce">
-                                <h1>{title}</h1>
+                                <h2>{title}</h2>
                                 <a href={link} className='more'>详细</a>
                                 {subtitles.map((subtitle, subIndex) => (
                                     <p key={subIndex}>{subtitle}</p>

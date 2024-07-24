@@ -4,12 +4,6 @@
     justify-content: space-between; /* 水平居中对齐 */
 
 }
-@media screen and (max-width: 1680px) {
-    .row-container {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
 
 
 .row-container.image-left .text-image-block {
@@ -44,20 +38,32 @@
 }
 
 .text-image-block img {
-    height: 540px; 
-    width: 420px; 
+    height: 27vw; 
+    width: 20vw; 
     object-fit: cover; /*裁切图片*/
-    image-rendering: -webkit-optimize-contrast; /* 对于Webkit内核的浏览器 */
-    image-rendering: crisp-edges; /* 对于大多数现代浏览器 */
-    image-rendering: -moz-crisp-edges; /* 对于Mozilla Firefox浏览器 */
-    image-rendering: pixelated; /* 对于一些特定的浏览器，主要是用于像素艺术效果 */
 }
 
 .sub-title {
-    font-size: 57.6px; /* 3% of 1920px */
+    font-size: 3vw; /* 3% of 1920px */
 }
 
 .text-with-image-container.with-bottom {
     border-bottom: 1px solid #ccc;
     padding-bottom: 5%; /* 没有改变，因为百分比是基于容器的高度或宽度 */
+}
+
+@media screen and (max-width: 1200px) {
+    .row-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .text-image-block img {
+        height: 540px; 
+        width: 400px; 
+    }
+
+    .sub-title {
+        font-size: 60px; /* 3% of 1920px */
+    }
 }

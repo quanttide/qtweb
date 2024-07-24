@@ -11,8 +11,8 @@
 
 .main-title {
     text-align: left;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
 }
   
 .items {
@@ -20,56 +20,30 @@
     justify-content: space-between;
 }
 
-
-  
 .item-first {
     position: relative;
-    width: 570px;
-    height: 360px;/*是否不等宽*/
+    width: 28vw;
+    height: 18vw;/*是否不等宽*/
 }
   
 .other-items {
     position: relative;
-    width: 300px;
-    height: 360px;
+    width: 15vw;
+    height: 18vw;
 }
   
 .item-first img {
-    width: 570px;
-    height: 360px;/*是否不等宽*/
+    width: 28vw;
+    height: 18vw;/*是否不等宽*/
     object-fit: cover; /*裁切图片*/
 }
 
 .other-items img {
-    width: 300px;
-    height: 360px;
+    width: 15vw;
+    height: 18vw;
     object-fit: cover; /*裁切图片*/
 }
   
-@media (max-width: 1200px) {
-    .items {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .item-first, .other-items {
-        width: 768px;
-        height: 768px;/*是否不等宽*/
-        margin-bottom: 20px; /* Optional: add spacing between items */
-    }
-  
-    .item-first img, .other-items img {
-        width: 768px;
-        height: 512px;/*是否不等宽*/
-        object-fit: cover; /*裁切图片*/
-    }
-  
-    .introduce-white-under {
-      width: 90%; /* Adjust width for better appearance */
-      margin-top: 20px;
-    }
-}
-
 .white-more {
     display: flex;
     flex-direction: column;
@@ -95,16 +69,7 @@
     margin-right: 0%;
 }
 
-.introduce-white h2 ,.introduce-white-under h2{
-    font-size: 35px;
-}
-
-.introduce-white p ,.introduce-white-under p{
-    font-size: 25px;
-}
-
 .whitebackground-introduce {
-    font-size: 25px;
     font-weight: 200;
     display: flex;
     justify-content: center;
@@ -114,4 +79,48 @@
 
 .white-more:hover {
     color: rgba(0, 0, 0, 0.618);
+}
+
+@media (max-width: 1200px) {
+
+    .main-title {
+        text-align: left;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .item-first, .other-items {
+        width: 768px;
+        height: 768px;/*是否不等宽*/
+        margin-bottom: 20px; /* Optional: add spacing between items */
+    }
+  
+    .item-first img, .other-items img {
+        width: 768px;
+        height: 512px;/*是否不等宽*/
+        object-fit: cover; /*裁切图片*/
+    }
+  
+    .introduce-white-under {
+      width: 90%; /* Adjust width for better appearance */
+      margin-top: 20px;
+    }
+
+    .introduce-white h2 ,.introduce-white-under h2{
+        font-size: 35px;
+    }
+    
+    .introduce-white p ,.introduce-white-under p{
+        font-size: 30px;
+    }
+    
+    .whitebackground-introduce {
+        font-size: 30px;
+        font-weight: 200;
+    }
 }

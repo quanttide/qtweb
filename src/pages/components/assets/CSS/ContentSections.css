@@ -45,9 +45,9 @@
     margin: 0 0 10px;
 }
   
-.section-link {
-    width: 35px;
-    height: 35px;
+.section-button-link {
+    width: 50px;
+    height: 50px;
     border-radius: 10%;
     background-color: rgba(0, 0, 255, 0);
     color:  rgba(15, 98, 254);
@@ -60,8 +60,14 @@
     margin-left: 20px; /* 确保按钮与内容有一定间距 */
     align-self: flex-start; /* 确保按钮在顶部对齐 */
 }
-  
-.section-link:hover {
+ 
+.section-text-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+.section-button-link:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
   

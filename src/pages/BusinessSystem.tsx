@@ -65,7 +65,7 @@ function BusinessSystem() {
 
             <Navigation />
 
-            <HeaderSlider title="量潮业务" imageUrl="./assets/images/frequency-wave-7776034.jpg" imageHeight="half" introduces={introducetext} />
+            <HeaderSlider title="量潮业务" imageUrl="./assets/images/frequency-wave-7776034_low_quanity.jpg" imageHeight="half" introduces={introducetext} />
 
             <HeaderSelect mainTitle="" contents={contents} />
 

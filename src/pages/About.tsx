@@ -12,40 +12,40 @@ import HeaderSlider from "./components/HeaderImage";
 // 数据区
 const data = [
   {
-    imageUrl: './assets/images/data_process_landscape.jpg',
+    imageUrl: './assets/images/data_process_landscape_low_quanity.jpg',
     title: '数据采集与处理',
-    subtitles: ['我们提供全面的科研服务','专注于高质量数据的采集与处理','确保您的研究项目能够获得准确、','可靠的数据支持。'],
+    subtitles: ['我们提供全面的科研服务专注于高质量数据的采集与处理'],
   },
   {
-    imageUrl: './assets/images/code_vertical.jpg',
+    imageUrl: './assets/images/code_vertical_low_quanity.jpg',
     title: '本地/网络应用开发',
-    subtitles: ['根据客户的具体需求','提供定制化的应用开发服务','从设计到实现，每一步都贴近用户的实际使用场景。'],
+    subtitles: ['提供定制化的应用开发服务'],
   },
   {
-    imageUrl: './assets/images/pexels-googledeepmind-17483870.jpg',
+    imageUrl: './assets/images/pexels-googledeepmind-17483870_low_quanity.jpg',
     title: '大模型智能体应用',
-    subtitles: ['利用最新的人工智能技术','打造了能够处理复杂任务的大型智能体','提供智能化解决方案。'],
+    subtitles: ['打造了能够处理复杂任务的大型智能体、提供智能化解决方案。'],
   },
 ];
 
 const text_on_image = [
   {
-    imageUrl: './assets/images/cooperation_landscape.jpg',
+    imageUrl: './assets/images/cooperation_landscape_low_quanity.jpg',
     title: '众多成功案例见证了我们的专业与承诺：',
     subtitles: ['自媒体网站动态分析工具','地图网站路径抓取系统','网页爬取解析工具','. . . . . .'],
   },
   {
-    imageUrl: './assets/images/pexels-pixabay-267350.jpg',
+    imageUrl: './assets/images/pexels-pixabay-267350_low_quanity.jpg',
     title: '自媒体网站动态分析工具',
     subtitles: ['精准跟踪一千余名关键意见领袖，采集一百余万条动态，', '通过从数据采集到预处理，再到人工标记总计20余项子步骤的精细加工，','实现了数据的深度挖掘'],
   },
   {
-    imageUrl: './assets/images/map_landscape.jpg',
+    imageUrl: './assets/images/map_landscape_low_quanity.jpg',
     title: '地图网站路径抓取系统',
     subtitles: ['收集大量路径规划及预估时间数据', '为城市研究提供了丰富实用的信息资源'],
   },
   {
-    imageUrl: './assets/images/webpage_landscape.jpg',
+    imageUrl: './assets/images/webpage_landscape_low_quanity.jpg',
     title: '网页爬取解析工具',
     subtitles: ['我们也曾为区块链研究者高效爬取并智能解析了数千条官方公告，', '利用大模型自动提取关键信息','大幅缩短信息收集时间。'],
   },

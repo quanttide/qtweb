@@ -1,17 +1,25 @@
-body {
-    background-color: rgba(250, 250, 250, 0.50);
-}
+
 
 .outer-container {
     padding-top: 5%;
-    padding-bottom: 8%;
+    padding-bottom: 12%;
     padding-left: 15%;
     padding-right: 15%;
     position: relative;
 }
 
+@media screen and (max-width: 1680px) {
+    .outer-container {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative;
+    }
+}
+
 h1, h2 ,h3 ,h4 ,h5 {
     font-weight: 200;
+    font-size: 35px;
 }
 
 p {
@@ -29,13 +37,13 @@ p {
 
 body {
     width: 100%;
-    height: 1080px; /* 固定高度 */
     overflow: auto; /* 允许滚动 */
     margin: 0 auto; /* 居中显示 */
+    background-color: rgba(250, 250, 250, 0.50);
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1200px) {
     body {
-        width: 1800px;
+        width: 1200px;
     }
 }

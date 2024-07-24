@@ -2,7 +2,15 @@
     display: flex;  /* 这将使子元素横向排列 */
     align-items: center; /* 垂直居中对齐 */
     justify-content: space-between; /* 水平居中对齐 */
+
 }
+@media screen and (max-width: 1680px) {
+    .row-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
 
 .row-container.image-left .text-image-block {
     order: 1; /* 图片在左 */
@@ -10,6 +18,7 @@
 
 .row-container.image-left .content {
     order: 2; /* 文字在右 */
+    padding-left: 8%;
 }
 
 .row-container.image-right .text-image-block {
@@ -18,6 +27,7 @@
 
 .row-container.image-right .content {
     order: 1; /* 文字在左 */
+    padding-right: 8%;
 }
 
 .row-container.row-container.content p {
@@ -26,18 +36,21 @@
 
 .row-container.row-container.image-left .content  {
     text-align: justify;
-    padding-left: 345.6px; /* 18% of 1920px */
+
 }
 
 .row-container.image-right .content  {
     text-align: justify;
-    padding-right: 345.6px; /* 18% of 1920px */
 }
 
 .text-image-block img {
-    height: 537.6px; /* 28% of 1920px */
-    width: 422.4px; /* 22% of 1920px */
+    height: 540px; 
+    width: 420px; 
     object-fit: cover; /*裁切图片*/
+    image-rendering: -webkit-optimize-contrast; /* 对于Webkit内核的浏览器 */
+    image-rendering: crisp-edges; /* 对于大多数现代浏览器 */
+    image-rendering: -moz-crisp-edges; /* 对于Mozilla Firefox浏览器 */
+    image-rendering: pixelated; /* 对于一些特定的浏览器，主要是用于像素艺术效果 */
 }
 
 .sub-title {

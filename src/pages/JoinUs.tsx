@@ -95,7 +95,7 @@ export default function News() {
 
       <Navigation />
 
-      <HeaderSlider title='加入我们' imageUrl='./assets/images/frequency-wave-7776034.jpg' imageHeight='half' introduces={introducetext} />
+      <HeaderSlider title='加入我们' imageUrl='./assets/images/frequency-wave-7776034_low_quanity.jpg' imageHeight='half' introduces={introducetext} />
 
       <HeaderSelect mainTitle='' contents={contents} />
 

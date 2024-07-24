@@ -52,13 +52,16 @@ export default function ContentSections({ maintitle, sections }: ContentSectionP
         <div key={index} className="section">
           <img src={require(`${section.imgSrc}`)} alt={section.title} className="section-image" />
           <div className="section-content">
-            <h2>{section.title}</h2>
-            <p>{section.description}</p>
+            <a href={section.link} target='blank' className='section-text-link'>
+              <h2>{section.title}</h2>
+              <p>{section.description}</p>
+            </a>
+
             {expandedSections[index] && (
               <section.DetailComponent />
             )}
           </div>
-          <button onClick={() => handleButtonClick(index, section.link)} className="section-link">
+          <button onClick={() => handleButtonClick(index, section.link)} className="section-button-link">
             {expandedSections[index] ? '↓' : '→'}
           </button>
         </div>

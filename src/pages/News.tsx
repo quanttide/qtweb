@@ -70,7 +70,7 @@ function News() {
       {/* 用来放一些文章 */}
       <Navigation />
 
-      <HeaderSlider title='博客' imageUrl='./assets/images/frequency-wave-7776034.jpg' imageHeight='half' introduces={introducetext} />
+      <HeaderSlider title='博客' imageUrl='./assets/images/frequency-wave-7776034_low_quanity.jpg' imageHeight='half' introduces={introducetext} />
 
       <ContentSections maintitle='' sections={sections} />
 

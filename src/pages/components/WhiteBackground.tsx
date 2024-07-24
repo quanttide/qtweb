@@ -30,7 +30,6 @@ export default function WhiteBackground({ pattern, dataTextUnderImage, mainTitle
   return (
     <div className='outer-container'>
       <div id='all-items'>
-        {/* mainTitle为空就不显示标题栏 */}
         {mainTitle &&
           <div id='title-line'>
             <h1 className='main-title'>{mainTitle}</h1>
@@ -42,7 +41,6 @@ export default function WhiteBackground({ pattern, dataTextUnderImage, mainTitle
         <div className="items">
           {data.map((item, index) => {
             const itemClass = (index === 0 && pattern === 'highlight_header') ? 'item item-first' : 'item other-items';
-
             return (
               <div key={index} className={itemClass}>
                 {!dataTextUnderImage && (
@@ -53,23 +51,23 @@ export default function WhiteBackground({ pattern, dataTextUnderImage, mainTitle
                     ))}
                   </div>
                 )}
-                <div style={{ marginBottom: '10px' }}>
+                <div>
                   <img src={require(`${item.imageUrl}`)} alt={item.title} />
-                </div>
-                {dataTextUnderImage && (
+                  {dataTextUnderImage && (
                   <div className='introduce-white-under'>
                     <h2>{item.title}</h2>
                     {item.subtitles.map((subtitle, subIndex) => (
                       <p key={subIndex}>{subtitle}</p>
                     ))}
                   </div>
-                )}
+                  )}
+                </div>
               </div>
             );
-          })}
+          })}  
         </div>
         {introduces &&
-          <div className='whitebackground-introduce' style={{ marginTop: '5%' }}>
+          <div className='whitebackground-introduce'>
             {introduces.map((introduce) => (
               <p>{introduce}</p>
             ))}

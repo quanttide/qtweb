@@ -24,7 +24,11 @@ jobs:
           access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
           access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
 
-      - run: ossutil cp build/ oss://qtweb-site/ -r -f --meta=Cache-Control:public,max-age=31536000
+      - name: Upload to OSS（长缓存）
+        run: ossutil cp build/ oss://qtweb-site/ -r -f --exclude "index.html" --meta=Cache-Control:public,max-age=31536000
+
+      - name: Upload index.html（no-cache）
+        run: ossutil cp build/index.html oss://qtweb-site/index.html -f --meta=Cache-Control:no-cache
 
       - name: Refresh CDN
         run: |
